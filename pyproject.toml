@@ -8,11 +8,19 @@ dependencies = [
     "opencv-python>=4.5.0",
     "numpy>=1.19.0",
     "pseyepy",
+    "pandas>=3.0.0",
+    "pyserial>=3.5",
+    "py-xl-sindy>=2.2.1",
+    "casadi>=3.7.2",
 ]
 
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scripts*"]
 
 [tool.uv.workspace]
 members = [
